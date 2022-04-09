@@ -3,11 +3,11 @@
   become: yes
   gather_facts: no
   tasks:
-    - name: install git, wget on nodes
-      apt:  
-        - name: "{{ item }}"
-          state: present
-      with_items:
-        - git 
-        - wget
+  - name: install git, wget on nodes
+    apt:  
+      - name: "{{ item }}"
+        state: present
+    with_items:
+      - git 
+      - wget
 
