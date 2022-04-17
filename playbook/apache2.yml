@@ -4,7 +4,7 @@
   tasks: 
   - name: install webserver
     apt:
-      name: apche2
+      name: apache2
       state: present
   
   - name: start apache
