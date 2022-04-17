@@ -1,2 +1,6 @@
 ---
+- include_tasks: tomcat.yml
+- include_tasks: config.yml
+- include_tasks: adminpkgs.yml
+- include_tasks: user.yml
 # tasks file for tom

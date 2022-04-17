@@ -1,0 +1,6 @@
+---
+- name: copy config file
+  template:
+    src: templates/tomconfig.j2
+    dest: /usr/share/tomcat/conf/tomcat.conf
+  notify: starttomcat
