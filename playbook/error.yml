@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes 
+  tasks:  
+    - name: install git
+      apt: 
+        name: gitt
+        state: present
+      ignore_errors: yes
+
+    - name: install apache2
+      apt: 
+        name: apache2
+        state: present
+      ignore_errors: yes
